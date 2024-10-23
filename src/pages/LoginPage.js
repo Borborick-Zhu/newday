@@ -2,7 +2,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './LoginPage.css';
-import logo from '../images/logo.png';
+import logo from '../assets/logo.png';
 
 function LoginPage() {
     const navigate = useNavigate(); // Hook for navigation
