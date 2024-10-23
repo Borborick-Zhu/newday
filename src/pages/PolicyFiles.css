@@ -1,12 +1,6 @@
-/* src/pages/Dashboard.css */
+/* src/pages/PolicyFiles.css */
 
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
-  }
-  
-  .dashboard-container {
+.policy-files-container {
     display: flex;
     height: 100vh;
   }
@@ -67,13 +61,11 @@ body {
     margin-bottom: 20px;
   }
   
-  .search-bar {
-    width: 70%;
-    padding: 15px;
-    border-radius: 30px;
-    border: 1px solid #ddd;
-    background-color: #f3f3f3;
-    font-size: 1.05rem;
+  .page-title {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #333;
+    padding-left: 20px;
   }
   
   .user-icon {
@@ -87,15 +79,11 @@ body {
     color: #555;
   }
   
-  .user-icon:active {
-    color: #333;
-  }
-  
-  .policy-list {
+  .file-list {
     flex-grow: 1;
   }
   
-  .policy-item {
+  .file-item {
     display: flex;
     align-items: center;
     padding: 16px;
@@ -105,43 +93,37 @@ body {
     transition: background-color 0.3s ease;
   }
   
-  .policy-item:hover {
+  .file-item:hover {
     background-color: rgba(0, 0, 0, 0.05);
   }
   
-  .policy-item:active {
-    background-color: rgba(0, 0, 0, 0.1);
-  }
-  
-  .folder-icon {
+  .file-icon {
     font-size: 1.8rem;
     margin-right: 16px;
     color: #f4b366;
     transition: color 0.3s ease;
   }
   
-  .policy-item:hover .folder-icon {
+  .file-item:hover .file-icon {
     color: #e09a42;
   }
   
-  .policy-item span {
-    flex-grow: 1;
-    font-weight: bold;
+  .file-size {
+    margin-left: auto;
+    font-size: 0.9rem;
+    color: #666;
   }
   
   .options-icon {
     font-size: 1.2rem;
     color: #555;
+    margin-left: 10px;
     cursor: pointer;
     transition: color 0.3s ease;
   }
   
   .options-icon:hover {
     color: #333;
-  }
-  
-  .options-icon:active {
-    color: #111;
   }
   
   /* Upload Button */
@@ -162,4 +144,3 @@ body {
     background-color: #f4b366;
     color: white;
   }
-  
